@@ -68,8 +68,8 @@ while True:
     break
   elif user_input.lower() in ["summarise", "summarize", "summary", "sum up"]:
     final_summary = message_history.summarise_history()
-    print(f"'Summary of past conversation: ', {final_summary}")
+    print(f"Summary of past conversation: {final_summary}")
     continue
 
   response = chat_with_bot(user_input)
-  print(f"'Chatbot: ', {response}")
+  print(f"Chatbot: {response}")
